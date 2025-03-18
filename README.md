@@ -1,7 +1,7 @@
 # WildEcho: Animal Sound Classification with CNN
 
 <p align="center">
-  <img src="sound.jpg" alt="Animal Sound Classification" width="80%">
+  <img src="sound.jpg" alt="Animal Sound Classification" height="50%" width="80%">
 </p>
 
 ## Overview
@@ -39,7 +39,7 @@ You can access the dataset from the following Google Drive link:
 [Dataset Link](https://drive.google.com/drive/folders/1W6hzpkutT4BEexB5zqV0EGFg9v99afKO?usp=drive_link)
 
  ## Results
-- **Training:** Learns well from the audio files.
+- **Training:** Learns well from the audio files. (less than 50 Epochs)
 - **Testing:** Guesses animals like “Lion (90% sure)” or “Sheep (95% sure)” correctly most times.
 - **How Good:** Works better with more files.
 
