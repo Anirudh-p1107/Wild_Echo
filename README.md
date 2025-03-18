@@ -1,4 +1,3 @@
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Wild_Echo/index.ipynb)
 
 
 # WildEcho: Animal Sound Classification with CNN
