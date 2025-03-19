@@ -7,7 +7,7 @@
 </p>
 
 ## Overview
--   "WildEcho" is a deep learning project that leverages Convolutional Neural Networks (CNNs) to classify animal sounds from audio recordings. Built in Google Colab, this system processes raw audio files into Mel spectrograms and trains a CNN model to identify species such as lions, monkeys, sheep, cows, and horses. The project aims to provide an accessible, scalable solution for wildlife audio recognition, with potential applications in ecological monitoring, education, and research.
+   "WildEcho" is a deep learning project that leverages Convolutional Neural Networks (CNNs) to classify animal sounds from audio recordings. Built in Google Colab, this system processes raw audio files into Mel spectrograms and trains a CNN model to identify species such as lions, monkeys, sheep, cows, and horses. The project aims to provide an accessible, scalable solution for wildlife audio recognition, with potential applications in ecological monitoring, education, and research.
 
 ## Features
 - **Audio Classification:** Identifies animals based on vocalizations.
