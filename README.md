@@ -17,8 +17,20 @@
 - **Prediction:** Identifies animal species from new audio files with confidence scores.
 - **Environment:** Fully implemented in Google Colab with Google Drive integration for dataset storage.
 
+
 ## How It Works
 - **Audio Input:** The user provides an audio file containing an animal sound.
+  
+ *Class Distribution*
+
+| Class    | Count | Class     | Count |
+|----------|-------|----------|-------|
+| Bear     | 50    | Elephant | 50    |
+| Cat      | 50    | Horse    | 50    |
+| Cow      | 50    | Lion     | 50    |
+| Dog      | 50    | Monkey   | 50    |
+| Donkey   | 50    | Sheep    | 50    |
+
 - **Preprocessing:** The system converts the audio into a Mel spectrogram, which represents the sound in a visual format.
 - **Feature Extraction:** The spectrogram undergoes normalization and padding to ensure uniform input size.
 - **Classification:** The CNN model analyzes the spectrogram and classifies it into one of the trained animal categories.
@@ -29,7 +41,27 @@
 - Uses a CNN with multiple convolutional layers.
 - Implements learning rate reduction, early stopping, and model checkpointing.
 - Saves the best model (best_model.keras).
-  
+
+  ## Classification Report
+
+| Animal   | Precision | Recall | F1-Score | Support |
+|----------|-----------|--------|----------|---------|
+| Elephant | 0.88      | 0.70   | 0.78     | 10      |
+| Bear     | 0.82      | 0.90   | 0.86     | 10      |
+| Horse    | 0.71      | 1.00   | 0.83     | 10      |
+| Lion     | 0.82      | 0.90   | 0.86     | 10      |
+| Dog      | 0.89      | 0.80   | 0.84     | 10      |
+| Donkey   | 0.89      | 0.80   | 0.84     | 10      |
+| Cat      | 0.70      | 0.70   | 0.70     | 10      |
+| Sheep    | 0.78      | 0.70   | 0.74     | 10      |
+| Cow      | 1.00      | 0.90   | 0.95     | 10      |
+| Monkey   | 0.90      | 0.90   | 0.90     | 10      |
+
+### Overall Metrics:
+- **Accuracy:** 0.83  
+- **Macro Avg:** Precision: 0.84 | Recall: 0.83 | F1-Score: 0.83  
+- **Weighted Avg:** Precision: 0.84 | Recall: 0.83 | F1-Score: 0.83  
+
  ## Tools Used
 - **Google Colab:** Free online place to run the project.
 - **Google Drive:** Stores the audio files.
