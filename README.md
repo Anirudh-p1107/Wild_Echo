@@ -37,10 +37,13 @@
 - **Prediction Output:** The system provides the predicted animal species along with a confidence score.
 
 ## Model Training
-- Converts .wav files into Mel spectrograms.
+- Converts `.wav` files into Mel spectrograms.
 - Uses a CNN with multiple convolutional layers.
 - Implements learning rate reduction, early stopping, and model checkpointing.
-- Saves the best model (best_model.keras).
+- Saves the best model (`best_model.keras`).
+ <p align="center">
+  <img src="training_history.png" alt="Plotting graph" height="50%" width="80%">
+</p>
 
   ## Classification Report
 
