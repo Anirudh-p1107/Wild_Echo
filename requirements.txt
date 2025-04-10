@@ -2,6 +2,5 @@ flask
 numpy
 librosa
 gdown
-gunicorn
 tensorflow
 keras
