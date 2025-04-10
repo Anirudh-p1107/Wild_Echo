@@ -1,6 +1,4 @@
 flask
-tensorflow
-keras
 numpy
 pillow
 librosa
