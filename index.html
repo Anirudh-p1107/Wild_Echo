@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animal Sound Classifier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: {% if prediction and is_safe %}#d4fcd4{% elif prediction and not is_safe %}#fcd4d4{% else %}#f0f0f0{% endif %};
+            text-align: center;
+            padding: 40px;
+        }
+
+        input[type="submit"],
+        input[type="file"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        input[type="file"] {
+            background-color: #ffffff;
+            border: 2px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+
+        img {
+            margin-top: 20px;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Animal Sound Classifier</h1>
+    <form method="post" enctype="multipart/form-data">
+        <p>Select a WAV file:</p>
+        <input type="file" name="audio" accept=".wav" required>
+        <br><br>
+        <input type="submit" value="Classify">
+    </form>
+
+    {% if prediction %}
+    <div class="result">
+        <h2>Prediction Result</h2>
+        <p><strong>Animal:</strong> {{ animal }}</p>
+        <p><strong>Confidence:</strong> {{ confidence }}%</p>
+        <p><strong>Status:</strong> {{ 'Safe' if is_safe else 'Unsafe' }}</p>
+        {% if image_url %}
+            <img src="{{ image_url }}" alt="{{ animal }}">
+        {% else %}
+            <p><em>No image available.</em></p>
+        {% endif %}
+    </div>
+    {% endif %}
+</body>
+</html>
