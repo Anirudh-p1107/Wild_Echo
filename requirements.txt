@@ -5,5 +5,3 @@ numpy
 pillow
 gdown
 gunicorn
-librosa
-matplotlib
