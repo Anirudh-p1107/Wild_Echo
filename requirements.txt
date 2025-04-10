@@ -1,7 +1,7 @@
 flask
 numpy
-pillow
 librosa
 gdown
 gunicorn
 tensorflow
+keras
