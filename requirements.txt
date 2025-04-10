@@ -3,5 +3,6 @@ tensorflow
 keras
 numpy
 pillow
+librosa
 gdown
 gunicorn
