@@ -4,3 +4,4 @@ pillow
 librosa
 gdown
 gunicorn
+tensorflow
