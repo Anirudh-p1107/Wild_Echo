@@ -41,13 +41,13 @@ After the model prediction, the animal is classified into a safety category usin
 | Cat      | Safe     |
 | Cow      | Safe     |
 | Donkey   | Safe     |
-| Elephant | Safe     |
+| Elephant | Unsafe   |
 | Horse    | Safe     |
 | Monkey   | Unsafe   |
 | Sheep    | Safe     |
 | Bear     | Unsafe   |
 | Lion     | Unsafe   |
-| Dog      | Unsafe   |
+| Dog      | Safe     |
 
 This categorization is handled in the Flask app and UI, separate from the model's predictions.
 
