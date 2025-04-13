@@ -1,6 +1,0 @@
-flask
-numpy
-librosa
-gdown
-tensorflow
-keras
